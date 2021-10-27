@@ -3,7 +3,8 @@ def alpha_maker(names):
     for n in names:
         if n[0] not in names.keys():
             dic[n[0]] = [n]
-    
+        else:
+            dic[n[0]].append(n)
     return dic
 
 if __name__ == '__main__':
