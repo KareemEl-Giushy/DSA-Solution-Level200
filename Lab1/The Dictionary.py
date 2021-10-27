@@ -1,7 +1,8 @@
 def alpha_maker(names):
     dic = {}
     for n in names:
-        dic[n[0]] = [n]
+        if n[0] not in names.keys():
+            dic[n[0]] = [n]
     
     return dic
 
